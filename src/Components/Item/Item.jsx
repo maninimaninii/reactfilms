@@ -6,9 +6,11 @@ import { Link } from 'react-router-dom'
 export const Item = (props) => {
   return (
     <div className='item'>
+      <Link to={`/details/${props.id}/${props.category}`}>
         <img src={props.image}/>
 
-        <p>{props.title}</p>
+        <p className='titref'>{props.title}</p></Link>
+        
     </div>
   )
 }

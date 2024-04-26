@@ -1,0 +1,8 @@
+.listeitems{
+    margin-top: 60px;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 10px;
+}
+
