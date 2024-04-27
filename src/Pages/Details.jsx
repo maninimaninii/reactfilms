@@ -1,9 +1,11 @@
 import React from 'react'
+import './CSS/details.css'
 import all_films from '../Components/Assets/all_films';
 import all_series from '../Components/Assets/all_series';
 import { useParams } from 'react-router-dom'
 import { Entite } from '../Components/Entite/Entite';
 import { Suggestions } from '../Components/Suggestions/Suggestions';
+import { Interractions } from '../Components/Interactions/Interractions';
 
 export const Details = () => {
     const {entiteId, category} = useParams();
@@ -17,8 +19,14 @@ export const Details = () => {
 
 
   return (
-    <div>
-          <Entite entite={entite} />
+    <div> 
+      <div className="haut">
+        <Entite entite={entite} />
+        <div className="interractions">
+          <Interractions/>
+          </div>
+      </div>
+          
           <Suggestions/>
     </div>
   )
