@@ -23,7 +23,7 @@ export const Details = () => {
       <div className="haut">
         <Entite entite={entite} />
         <div className="interractions">
-          <Interractions/>
+          <Interractions entite={entite}/>
           </div>
       </div>
           

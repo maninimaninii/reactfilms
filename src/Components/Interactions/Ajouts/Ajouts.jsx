@@ -4,16 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye as regularEye, faEye as solidEye } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as regularHeart, faHeart as solidHeart } from '@fortawesome/free-regular-svg-icons';
 import { faClock as regularClock, faClock as solidClock } from '@fortawesome/free-regular-svg-icons';
+import { useWatchlist } from '../../Context/WatchListContext';
 
 
-export const Ajouts = () => {
+export const Ajouts = ({ entite }) => {
     const [eyeClicked, setEyeClicked] = useState(false);
     const [heartClicked, setHeartClicked] = useState(false);
     const [clockClicked, setClockClicked] = useState(false);
+    const { addToWatchlist, removeFromWatchlist } = useWatchlist();
+
 
     const handleEyeClick = () =>{ setEyeClicked(!eyeClicked);}
     const handleHeartClick = () =>{ setHeartClicked(!heartClicked);}
-    const handleClockClick = () =>{ setClockClicked(!clockClicked);}
+    const handleClockClick = () =>{ setClockClicked(!clockClicked); 
+                                    addToWatchlist(entite);
+                                   
+                                }
 
 
   return (

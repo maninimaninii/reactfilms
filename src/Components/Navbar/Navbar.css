@@ -37,7 +37,7 @@
     text-decoration: none;
     color: #99aabb;
 }
-.navig li:hover {
+.reste:hover {
     font-weight: bold;
     color: white;
 }
@@ -50,6 +50,8 @@
     color: white;
 }
 
+
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -59,6 +61,7 @@
     padding: 0; 
     margin: 0; 
     min-width: 240px;
+    color: #202830;
     transition: opacity 0.3s ease;
 }
 
@@ -66,16 +69,36 @@
     text-decoration: none;
     display: block;
     margin-left: 0;
+    color: #202830;
 }
 
 .navbar li {
     position: relative; 
 }
 
+.drop{
+    min-width: 230px;
+    text-align: center;
+   
+}
+
+
+.drop:hover{
+    background-color: #8899aa;
+     color:  #202830;;
+}
+
 .navbar li:hover .dropdown-menu {
     display: block;
     position: absolute;
+    background-color: #8899aa;
+    color: #202830;
     top: 100%; 
     left: 0; 
     opacity: 1;
+}
+
+
+.dm:hover{
+     color:  #202830;
 }

@@ -3,12 +3,12 @@ import React from 'react'
 import Stars from './Stars/Stars'
 import { Ajouts } from './Ajouts/Ajouts'
 
-export const Interractions = () => {
+export const Interractions = ({entite}) => {
   return (
     <div className='Interractions'>
       <Stars/>
       <hr/>
-      <Ajouts/>
+      <Ajouts entite={entite}/>
       <hr/>
       <div className='enbas'>Partager</div>
 
