@@ -7,6 +7,8 @@ import { Footer } from './Components/Footer/Footer';
 import { Details } from './Pages/Details';
 import { WatchListProvider } from './Components/Context/WatchListContext';
 import { WatchList } from './Pages/WatchList';
+import { Login } from './Pages/Login';
+import { SignUp } from './Pages/Signup';
 
 
 function App(){
@@ -21,6 +23,8 @@ function App(){
     <Route path='/séries' element={ <ListeCat category="séries"/> } />
     <Route path='/details/:entiteId/:category' element={<Details/>}/>
     <Route path='/watchlist' element={<WatchList/>}/>
+    <Route path='/login' element={<Login/>}/>
+    <Route path='/register' element={<SignUp/>}/>
     </Routes>
     </WatchListProvider>
     <Footer/>
